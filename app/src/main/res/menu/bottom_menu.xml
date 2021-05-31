@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/diet_item"
+        android:enabled="true"
+        android:icon="@drawable/ic_diet"
+        android:title="Diet"
+        app:cnb_iconColor="@color/white"
+        app:cnb_textColor="@color/white" />
+
+    <item
+        android:id="@+id/home_item"
+        android:enabled="true"
+        android:icon="@drawable/ic_workout"
+        android:title="Home"
+        app:cnb_iconColor="@color/white"
+        app:cnb_textColor="@color/white" />
+
+    <item
+        android:id="@+id/report_item"
+        android:enabled="true"
+        android:icon="@drawable/ic_schedule"
+        android:title="Report"
+        app:cnb_iconColor="@color/white"
+        app:cnb_textColor="@color/white" />
+
+    <item
+        android:id="@+id/pedo_item"
+        android:enabled="true"
+        android:icon="@drawable/ic_pedometer"
+        android:title="Pedometer"
+        app:cnb_iconColor="@color/white"
+        app:cnb_textColor="@color/white" />
+
+</menu>

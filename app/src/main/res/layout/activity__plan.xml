@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.sagar.fitnessfanatic.Activity.Activity_Plan">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/bar_header"
+        android:layout_height="200dp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:id="@+id/collapseActionView"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/back_img"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"
+                android:layout_height="200dp"/>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                app:layout_collapseMode="pin"
+                android:id="@+id/toolbar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                android:layout_height="?attr/actionBarSize"/>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        android:layout_height="wrap_content">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:background="#F1EEEE"
+        android:id="@+id/rv_day"
+        android:padding="5dp"
+        android:layout_height="wrap_content"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:id="@+id/vp_days"
+        android:layout_marginBottom="60dp"
+        android:visibility="visible"
+        android:background="#F1EEEE"
+        android:layout_below="@+id/rv_day"
+        android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/btn_start"
+        android:layout_margin="5dp"
+        android:text="start"
+        android:fontFamily="@font/fredoka_one"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_back_primary"
+        android:layout_height="50dp"/>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

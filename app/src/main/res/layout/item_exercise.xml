@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <!--<pl.droidsonroids.gif.GifImageView
+                android:layout_width="100dp"
+                android:id="@+id/exercise_gif"
+                android:src="@drawable/abdominal_crunhes"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:layout_height="80dp"/>-->
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="100dp"
+                android:id="@+id/exercise_gif"
+                android:src="@drawable/thumb_abdominal_crunches"
+                android:padding="15dp"
+                android:adjustViewBounds="true"
+                android:layout_height="80dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/exercise_tv"
+                android:text="Exercise sample"
+                android:gravity="left"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/pt_sans_caption"
+                android:textColor="@color/black"
+                android:maxLines="2"
+                android:layout_toLeftOf="@+id/open_exercise"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/exercise_gif"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:src="@drawable/open_btn"
+                android:id="@+id/open_exercise"
+                android:layout_alignParentRight="true"
+                android:padding="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:layout_height="30dp"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

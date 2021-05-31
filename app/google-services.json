@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "314940885146",
+    "project_id": "fitness-fanatic-8eb76",
+    "storage_bucket": "fitness-fanatic-8eb76.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314940885146:android:05017f923e77db05f63723",
+        "android_client_info": {
+          "package_name": "com.sagar.fitnessfanatic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "314940885146-9e1o3gbf432uno881o671f0qkpe071tp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzlZ3S10p3q7fOYzgusMUhgGWLvR6PXvs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "314940885146-9e1o3gbf432uno881o671f0qkpe071tp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

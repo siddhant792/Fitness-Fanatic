@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/baloo"
+            android:paddingLeft="50dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_round_colorprimary"
+            android:fontFamily="@font/baloo"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="PEDOMETER"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/stepsCountCircle"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center">
+
+        <com.skyfishjy.library.RippleBackground
+            android:id="@+id/rippleBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            app:rb_color="#0099CC"
+            app:rb_duration="3000"
+            app:rb_radius="16dp"
+            app:rb_rippleAmount="2"
+            app:rb_scale="8"
+            app:rb_type="strokeRipple">
+
+            <me.itangqi.waveloadingview.WaveLoadingView
+                android:id="@+id/waveLoadingView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_step_circle"
+                app:wlv_borderColor="@android:color/transparent"
+                app:wlv_borderWidth="5dp"
+                app:wlv_progressValue="20"
+                app:wlv_round_rectangle="true"
+                app:wlv_shapeType="circle"
+                app:wlv_waveAmplitude="50"
+                app:wlv_waveColor="#28B860"/>
+
+        </com.skyfishjy.library.RippleBackground>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pauseTextCardView"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_above="@+id/stepsCounter"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"
+            app:cardCornerRadius="8dp"
+            tools:visibility="visible">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:shadowRadius="150"
+                android:elevation="30dp"
+                android:text="Paused"
+                android:textColor="#28B860"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/stepsCounter"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Today"
+            android:textColor="#004D40"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/stepsCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="0"
+            android:textColor="#000"
+            android:textSize="40sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stepsCounter"
+            android:id="@+id/tv_step"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:text="Steps"
+            android:textColor="#fcfcfc"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/stepsCountCircle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/user_frag_bottom_nav"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:src="@drawable/ic_footprints"
+                android:layout_height="wrap_content"
+                android:id="@+id/ic_step"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Total Steps : 5000"
+                android:layout_toRightOf="@+id/ic_step"
+                android:shadowRadius="150"
+                android:textColor="#fff"
+                android:id="@+id/tv_total_steps"
+                android:fontFamily="@font/raleway_medium"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/btn_start_pedo"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/bottom_nav"
+        android:background="@drawable/back_start_btn"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:src="@drawable/ic_start"
+            android:layout_height="20dp"
+            android:padding="2dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Start"
+            android:layout_marginLeft="10dp"
+            android:textColor="#fff"
+            android:fontFamily="@font/raleway_medium"
+            android:textSize="14sp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/btn_start_pedo"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/tv_today_tip"
+            android:textColor="@color/black"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/raleway_medium"
+            android:gravity="center"
+            android:text="Did You Know : Running is an excellent form of exercise for weight loss"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

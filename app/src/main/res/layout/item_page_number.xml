@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:layout_marginLeft="8dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:paddingLeft="7dp"
+        android:id="@+id/day_background"
+        android:paddingRight="7dp"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_current_day"
+            android:text="Day 1"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:fontFamily="@font/pt_sans_caption"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

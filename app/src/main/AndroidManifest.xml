@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sagar.fitnessfanatic">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-feature android:name="android.hardware.sensor.stepcounter"/>
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_square"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/ic_circle"
+        android:name=".ApplicationClass"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.sagar.fitnessfanatic.Activity.Splash_New"
+            android:theme="@style/SplashTheme"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <receiver android:name=".Services.ExecutableServices" android:enabled="true" android:exported="true"/>
+
+        <activity android:name="com.sagar.fitnessfanatic.Activity.Read_posts"
+            android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2955522562259928~9511139262" />
+
+        <activity android:name="com.sagar.fitnessfanatic.Activity.StartPlan_Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.sagar.fitnessfanatic.Activity.Explore_Exercise"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.sagar.fitnessfanatic.Activity.Activity_Plan"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.sagar.fitnessfanatic.Activity.Bmi_Calculator"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.sagar.fitnessfanatic.Activity.MainActivity"
+            android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

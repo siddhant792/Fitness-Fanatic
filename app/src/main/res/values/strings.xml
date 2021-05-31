@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Fitness Fanatic</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //Exercise descriptions'
+
+    <string name="bannerAds">ca-app-pub-2955522562259928/8198057599</string>
+
+    <string name="MountainClimber">Start in push-up position. Bend your right knee towards your chest and keep your left leg straight, then quickly switch from one leg to the other.\n\nThis exercise strengthens multiple muscle group.</string>
+    <string name="Squats">Stand with your feet shoulder width apart and your arms stretched forward, then lower your body until your thighs are parallel with the floor.\n\nYour knees should be extended in the same direction as your toes. Return to the start position and do the next rep.\n\nThis works the thighs, hips buttocks, quads, hamstring and lower body.</string>
+    <string name="highstepping">Run in place while pulling your knees as high as possible with each step.\n\nKeep your upper body upright during this exercise</string>
+    <string name="pushup">Lay prone on the ground with arms supporting your body.\n\nKeep your body straight while raising and lowering your body with your arms.\n\nThis exercise works the chest, shoulder, triceps, back and legs.</string>
+    <string name="reversecrunches">Lie on your back with your knees up at a 90 degree angle and your hands behind your head.\n\nLift your upper body and thigh, and then stretch out. Repeat this exercise.</string>
+    <string name="plank">Lie on the floor with your toes and forearms on the ground. Keep your body straight and hold this position as long as you can.\n\nThis exercise strengthens the abdomen, back and shoulders.</string>
+    <string name="cobra">Lie down on your stomach and bend your elbows with your hands beneath your shoulders.\n\nThen push your chest up off the ground as far as possible. Hold the position for second.</string>
+    <string name="tricepdips">For the start position, sit on the chair. Then move your hips off the chair with your hands holding the edge of the chair.\n\nSlowly bend and stretch your arms to make your body go up and down. This is a great exercise for the triceps.</string>
+    <string name="jumpingjack">Start with your feet together and your arms by your sides, then jump up with your feet apart and your hands overhead.\n\nReturn to the start position then do the next rep. This exercise provides a full-body workout and works all your large muscle groups.</string>
+    <string name="longarmcrunches">Lie on your back with knees bent and feet flat on the floor. Put your arms straight over the top of your head.\n\nLift your upper body off the floor, then slowly go back to the position. The exercise increases abdominal endurance.</string>
+    <string name="bicyclecrunches">Lie on the floor with your hands behind your ears. Raise your knees and close your right elbow towards your left knee, then close your left elbow towards your right knee. Repeat the exercise.</string>
+    <string name="heeltouch">Lie on the floor with your legs bent and your arms by your sides.\n\nSlightly lift your upper body off the floor and make your hands alternately reach your heels.</string>
+    <string name="flutterkick">Lie on the floor with your arms at your sides. Lift your legs and keep them as straight as you can.\n\nThen quickly raise your right leg up, and simultaneously lower your left leg. Switch legs and repeat. </string>
+    <string name="skippingnorope">Place your arms at your sides and pretend to hold a skipping rope handle in each hand.\n\nJump and alternately land on the balls of your feet, rotating your wrists at the same time as if you were spinning a rope.</string>
+    <string name="lunges">Stand with your feet shoulder width apart and your hands on your hands on your hips.\n\nTake a step forward with your right leg and lower your body until your right thigh is parallel with the floor.\n\nThen return and switch to the other leg. This exercise strengthens the quadriceps, gluteus maximus and hamstring.</string>
+    <string name="squatpulses">Stand with your feet shoulder width apart. Bend your arms in front of you to keep balance.\n\nLower your until your thighs are parallel with the floor. Come half way up instead of coming all the way up, then squats down again. Repeat.</string>
+    <string name="buttbridge">Lie on your back with knees bent and feet flat on the floor. Put your arms flat at your sides.\n\nThen lift your butt up and down.</string>
+    <string name="stepupontochair">Stand in front of a chair. Then step up on the chair and step back down.\n\nThe exercise works to strengthen the legs and buttocks.</string>
+    <string name="reclinedoblique">Lie on your back with your legs extended and your elbows directly under your shoulders.\n\nLift your left leg up at a 45 degree angle while reaching your right arm over to your left side.\n\nThen slowly go back to the starting position. Repeat several times, and then switch to the other side.</string>
+    <string name="abdominalcrunches">Lie on your back with your knees bent and your arms stretched forward.\n\nThen lift your upper body off the floor. Hold for a few seconds and slowly return.\n\nIt primarily works the rectus abdominal muscles and the obliques.</string>
+    <string name="burpee">Stand with your feet shoulder width apart, then put your hands on the ground and kick your feet backward. Do a quick push-up and then jump up.</string>
+    <string name="lateralplankwalk">Start in a straight amr plank position with your hands underneath your shoulders.\n\nWalk your hands and feet to the left at the same time. Take a few steps to the left, then a few steps to the right. Repeat the exercise.</string>
+    <string name="vups">Lie on your back with your arms and legs extended and your legs squeezed together.\n\nRaise your upper body and legs, use your arms to touch your toes, then go back to the start position and repeat the exercise.</string>
+    <string name="plankjack">Start in the straight arm plank position with your hands under your shoulder and feet together.\n\nHop your feet apart and land on your toes, then hop back. Repeat the exercise.</string>
+    <string name="legraise">Lie down on your back, and put your hands beneath your hips for support.\n\nThen lift your legs up until they form a right angle with the floor.\n\nSlowly bring your legs back down and repeat the exercise.</string>
+    <string name="cruncheswithlegraised">Lie your back with your legs straight up towards the ceiling and your hands behind your ears.\n\nLift your shoulders up off the floor, then slowly go back to the starting position. Repeat the exercise.</string>
+
+</resources>

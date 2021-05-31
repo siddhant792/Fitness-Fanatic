@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_paused"
+    android:background="@drawable/color_white"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="#FAFAFA"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="40dp"
+                android:background="#A69F9F"
+                android:layout_height="5dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:clickable="true"
+            android:id="@+id/click_musica"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="70dp"
+                android:src="@drawable/musica_prom"
+                android:id="@+id/img_icon3"
+                android:layout_centerVertical="true"
+                app:riv_corner_radius="5dp"
+                android:layout_height="70dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@+id/img_icon3"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Musica - The Indian Short Video App"
+                    android:textSize="13sp"
+                    android:id="@+id/tv_name3"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:src="@drawable/ic_5star"
+                    android:layout_marginLeft="3dp"
+                    android:adjustViewBounds="true"
+                    android:layout_below="@+id/tv_name3"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:clickable="true"
+            android:id="@+id/click_wallpaper"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="70dp"
+                android:src="@drawable/wallpaper_arena_prom"
+                android:id="@+id/img_icon"
+                app:riv_corner_radius="5dp"
+                android:layout_centerVertical="true"
+                android:layout_height="70dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@+id/img_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Wallpaper Arena - Nature, Amoled, Abstract Free"
+                    android:textSize="13sp"
+                    android:id="@+id/tv_name"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:src="@drawable/ic_4star_new"
+                    android:adjustViewBounds="true"
+                    android:layout_below="@+id/tv_name"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:padding="5dp"
+            android:clickable="true"
+            android:id="@+id/click_careyourself"
+            android:layout_height="wrap_content">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="70dp"
+                android:src="@drawable/careyourself_prom"
+                android:padding="8dp"
+                android:id="@+id/img_icon2"
+                android:layout_centerVertical="true"
+                app:riv_corner_radius="5dp"
+                android:layout_height="70dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@+id/img_icon2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Care Yourself"
+                    android:textSize="13sp"
+                    android:id="@+id/tv_name2"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:src="@drawable/ic_4star_new"
+                    android:adjustViewBounds="true"
+                    android:layout_below="@+id/tv_name2"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

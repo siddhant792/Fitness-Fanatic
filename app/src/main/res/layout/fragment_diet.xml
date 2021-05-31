@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context="com.sagar.fitnessfanatic.Fragments.Diet">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:id="@+id/img_diet_head"
+                        android:src="@drawable/vector_diet"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:layout_height="220dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimary"
+                            android:fontFamily="@font/baloo"
+                            android:paddingLeft="50dp"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/back_round_colorprimary"
+                            android:fontFamily="@font/baloo"
+                            android:paddingRight="10dp"
+                            android:paddingLeft="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:textAllCaps="true"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:text="diet articles"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="premium diet plans"
+                    android:fontFamily="@font/baloo"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/rv_diet_plan"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="food and drinks"
+                    android:fontFamily="@font/baloo"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/rv_food_and_drinks"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="health and fitness"
+                    android:fontFamily="@font/baloo"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/rv_health_and_fitness"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="weight loss"
+                    android:fontFamily="@font/baloo"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/rv_weight_loss"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="recipes"
+                    android:fontFamily="@font/baloo"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/rv_recipes"
+                    android:layout_marginBottom="20dp"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</RelativeLayout>

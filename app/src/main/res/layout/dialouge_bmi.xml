@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="250dp"
+        app:cardCornerRadius="20dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/normal_bmi"
+            android:padding="10dp"
+            android:id="@+id/ly_back_bmi_color"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Your BMI is :"
+                android:fontFamily="@font/cabin"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="15.8"
+                android:fontFamily="@font/baloo"
+                android:id="@+id/calculated_bmi_figure"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="40sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Normal"
+                android:fontFamily="@font/cabin"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/bmi_text_status"
+                android:layout_marginTop="20dp"
+                android:textSize="25sp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Here are some tips to maintain your BMI -"
+                android:fontFamily="@font/cabin"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@+id/bmi_advice_text"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/normal_new"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="20dp"
+                android:id="@+id/img_advice"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:id="@+id/close_dialouge"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/close_btn"
+                android:layout_margin="10dp"
+                android:layout_height="30dp"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
